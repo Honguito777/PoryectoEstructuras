@@ -1,0 +1,100 @@
+@import url('https://fonts.googleapis.com/css2?family=Raleway:wght@400;700&display=swap');
+
+body {
+    font-family: 'Raleway', sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background: linear-gradient(135deg, #6a11cb, #2575fc);
+    margin: 0;
+    color: #fff;
+}
+
+.container {
+    text-align: center;
+    background: #2b2b2b;
+    padding: 20px;
+    border-radius: 20px;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.2);
+    max-width: 600px;
+    width: 90%;
+}
+
+h1 {
+    color: #fff;
+    margin-bottom: 20px;
+    font-size: 2rem;
+}
+
+.array-container {
+    margin: 20px 0;
+}
+
+#array {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.array-element {
+    width: 100%;
+    padding: 15px;
+    margin: 5px 0;
+    border: 2px solid #fff;
+    border-radius: 10px;
+    background-color: #3a3a3a;
+    display: flex;
+    justify-content: space-between;
+    font-weight: bold;
+    transition: transform 0.3s ease, background-color 0.3s ease;
+}
+
+.array-element:hover {
+    transform: scale(1.05);
+    background-color: #505050;
+}
+
+.controls {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+.input-field {
+    margin: 5px;
+    padding: 10px;
+    border: 2px solid #fff;
+    border-radius: 10px;
+    background: #4a4a4a;
+    color: #fff;
+    width: 80px;
+    text-align: center;
+}
+
+.input-field::placeholder {
+    color: #ccc;
+}
+
+.action-button {
+    margin: 5px;
+    padding: 10px 15px;
+    border: none;
+    border-radius: 10px;
+    background: linear-gradient(135deg, #ff416c, #ff4b2b);
+    color: white;
+    cursor: pointer;
+    transition: background 0.3s ease, transform 0.3s ease;
+}
+
+.action-button:hover {
+    background: linear-gradient(135deg, #ff4b2b, #ff416c);
+    transform: scale(1.1);
+}
+
+#result {
+    margin-top: 20px;
+    font-weight: bold;
+    color: #ffeb3b;
+    font-size: 1.2rem;
+}
